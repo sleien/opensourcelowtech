@@ -1,0 +1,36 @@
+<div class="tutorial--list" *ngIf="!name">
+    <div>
+        <h2>Tutorials</h2>
+    </div>
+    <div>
+        <div *ngFor="let topic of youtubeLinks;">
+            <h3>{{topic.name}}</h3>
+            <div *ngFor="let item of topic.items">
+                <a href="/tutorials?name={{item.id}}" *ngIf="item.active">
+                    <div class="tutorial--item">
+                        <img src="{{item.thumbnail}}">
+                        <h3>{{item.name}}</h3>
+                    </div>
+                </a>
+                <div class="tutorial--item" *ngIf="!item.active">
+                    <img src="{{item.thumbnail}}">
+                    <div>
+                        <h3>{{item.name}}</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="tutorial--grid" *ngIf="name">
+    <div id="player" onload="this.width=document.getElementById('player').offsetWidth">
+        <youtube-player *ngIf="width" videoId={{link}} suggestedQuality="highres" [width]="width" [height]="height">
+        </youtube-player>
+    </div>
+    <div class="tutorial--text" id="tutorial-text">
+        <markdown [src]="'/assets/files/' + name + '.md'" *ngIf="name"></markdown>
+    </div>
+</div>

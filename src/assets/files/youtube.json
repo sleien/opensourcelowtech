@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Energy",
+        "items": [
+            {
+                "id": "wind-turbine",
+                "name": "30$ Wind Turbine",
+                "link": "t9TrUPoevXI",
+                "thumbnail": "https://opensourcelowtech.org/tutorials/thumbs/VAWT_thumb1.jpg",
+                "active": true
+            },
+            {
+                "id": "solar-water",
+                "name": "Solar Hot Water Panel",
+                "link": "2",
+                "thumbnail": "https://opensourcelowtech.org/tutorials/thumbs/solarwater_thumb1.jpg",
+                "active": false
+            }
+        ]
+    },
+    {
+        "name": "Cooling",
+        "items": [
+            {
+                "id": "aircon",
+                "name": "Ground Mass Aircon",
+                "link": "3",
+                "thumbnail": "https://opensourcelowtech.org/tutorials/thumbs/groundcooling_thumb1.jpg",
+                "active": false
+            }
+        ]
+    },
+    {
+        "name": "Food, Water, Sanitation",
+        "items": [
+            {
+                "id": "rocket-stove",
+                "name": "Rocket Stove",
+                "link": "ywljr9RKExQ",
+                "thumbnail": "https://opensourcelowtech.org/tutorials/thumbs/rocket_thumb1.jpg",
+                "active": true
+            },
+            {
+                "id": "water-filter",
+                "name": "$5 Carbon Water Filter",
+                "link": "232xA2e8RiQ",
+                "thumbnail": "https://opensourcelowtech.org/tutorials/thumbs/bucketfilter_thumb1.jpg",
+                "active": true
+            }
+        ]
+    },
+    {
+        "name": "Communication",
+        "items": [
+            {
+                "id": "wifi-dish",
+                "name": "Wifi/Mobile Reflector Dish",
+                "link": "4axIPJHuDrQ",
+                "thumbnail": "https://opensourcelowtech.org/tutorials/thumbs/dish_thumb1.jpg",
+                "active": true
+            }
+        ]
+    }
+]

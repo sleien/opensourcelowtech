@@ -1,0 +1,57 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100vw - (100vw - 100%));
+    background-color: var(--background-color);
+}
+
+.footer--header {
+    display: grid;
+    padding: 0 15px;
+}
+
+#donate {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% 300%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 10%;
+    }
+    50% {
+        background-position: 40% 50%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer--header {
+        grid-template-columns: 1fr 1fr 1fr;
+        line-height: 50px;
+        > div:first-child {
+            text-align: left;
+        }
+        > div:nth-child(2) {
+            text-align: center;
+        }
+        > div:nth-child(3) {
+            text-align: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer--header {
+        grid-template-columns: 100%;
+        justify-content: right;
+        text-align: center;
+        line-height: 35px;
+    }
+}
